@@ -1,0 +1,24 @@
+footer {
+    background-color: $lightBlue;
+}
+
+#footer {
+    @include providence;
+    height: 75px;  
+    color: white;
+    font-size: 16px;
+
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: $darkBlue;
+        }
+    }
+}
+
+#copyright {
+    color: white;
+}
+
+

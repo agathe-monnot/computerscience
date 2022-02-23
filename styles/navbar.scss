@@ -1,0 +1,32 @@
+#topBar {
+    background-color: $lightBlue;
+    height: 25px;
+}
+    
+nav {
+@include providence;
+    background-color: white;
+    font-size: 20px;
+    line-height: 20px;
+    /* height: 100px; */
+        
+    #title{
+        color: $red;
+        font-size: 24px;
+    }   
+}
+
+/* over write navbar-light settings */
+.navbar-light .navbar-nav .nav-link {
+    color: $darkGrey;
+
+        &:hover{
+            color: $green;
+        }
+}
+
+#open {
+    background-color: $green;
+    color: white;
+    border-radius: 10px;
+}

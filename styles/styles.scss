@@ -1,0 +1,194 @@
+
+/* colour variables */
+$red: #fd2d53;
+$yellow: #ffdc22;
+$darkBlue: #007ec8;
+$lightBlue: #0ec2f1;
+$green: #00c349;
+$darkGrey: #2f2f2f;
+
+/* MIXINS */
+@mixin providence {
+    font-family: ff-providence-sans-web-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin open {
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* IMPORTS */
+@import "./navbar.scss";
+@import "./footer.scss";
+
+html {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+body, label{
+    color: $darkGrey;
+    font-size: 18px;
+    line-height: 2.3em;
+    @include open;
+}
+
+p {
+    color: $darkGrey;
+}
+
+main {
+    margin-bottom: 73px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, .h2, .h4 {
+    @include providence;
+}
+
+.h2 {
+    color: $darkBlue;
+}
+
+h2 {
+    color: $darkBlue;
+}
+
+/* homepage */
+#homeBg {
+    background-color: $yellow;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    background-color: $lightBlue;
+    color: white;
+    line-height: 1.7em;
+}
+
+.heading {
+    background-color: $green;
+    color: white;
+    text-align: center;
+}
+
+/* links */
+.scrollSpy {
+    @include providence;
+    background-color: $darkBlue;
+    border-radius: 10px;
+    a {
+        color: white;
+    text-decoration: none;
+    font-size: 22px;
+    &:hover {
+        color: $yellow;
+    }
+    }
+}
+
+.goToGame {
+    @include providence;
+    font-size: 22px;
+    background-color: $darkBlue;
+    color: white;
+    &:hover {
+        background-color: $yellow;
+        color: white;
+    }
+}
+
+.hint {
+    @include providence;
+    font-size: 22px;
+    background-color: $green;
+    color: white;
+    &:hover {
+        background-color: $yellow;
+        color: white;
+    }
+}
+
+.backToTop {
+    @include providence;
+    font-size: 22px;
+    background-color: $lightBlue;
+    color: white;
+    &:hover {
+        background-color: $yellow;
+        color: white;
+    }
+}
+
+/* colours of text */
+.blue {
+    color: $darkBlue;
+    text-align: center;
+}
+
+.red {
+    color: $red;
+    font-weight: 700;
+}
+
+.green {
+    color: $green;
+    font-weight: 700;
+}
+
+.thumb {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.question {
+    border-radius: 20px;
+    background-color: white;
+}
+
+.img-question {
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* draggable items box */
+.bg{
+    background-color: #a0e1f1; 
+    border-radius: 15px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+#result {
+    color: $darkGrey;
+}
+
+/* game 1 */
+.indication {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px){
+    #footer {
+        height: 115px;
+    }
+}

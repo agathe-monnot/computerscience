@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple choice questions</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/nyg6oaf.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid" id="topBar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container py-3">
+            <a class="navbar-brand" id="title" href="index.html">ALL ABOUT<br>COMPUTER<br>SCIENCE!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center mt-4 mt-lg-0">
+                    <a class="nav-link mx-3" href="index.html">HOME</a>
+                    <a class="nav-link mx-3" href="content.html">LESSON</a>
+                    <a class="nav-link mx-3" id="open" aria-current="page" href="game1.html">FIRST GAME</a>
+                    <a class="nav-link mx-3" href="game2.html">SECOND GAME</a>
+                    <a class="nav-link mx-3" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <main>
+        <!-- introduction -->
+        <!-- green title -->
+        <div class="container-fluid heading" id="internet">
+            <div class="container">
+                <h1 class="pt-4">Multiple choice questions!</h1>
+            </div>
+            <!-- container light blue background -->
+            <div class="container-fluid intro">
+                <!-- text container -->
+                <div class="container text-center py-5">
+                    <h1>How to play ?</h1>
+                    <p class="pt-2 pb-4 text-white">Select the correct answer and click on "submit".<br>If you are not
+                        sure, click on "get a hint" to get some help!</p>
+                    <!-- buttons scrollspy-->
+                    <div class="row gx-2">
+                        <div class="col-lg-4 col-6">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q1">Question 1</a></div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q2">Question 2</a></div>
+                        </div>
+                        <div class="col-lg-4 col-6 mt-3 mt-lg-0">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q3">Question 3</a></div>
+                        </div>
+                        <div class="col-lg-4 col-6 mt-3">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q4">Question 4</a></div>
+                        </div>
+                        <div class="col-lg-4 col-6 mt-3">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q5">Question 5</a></div>
+                        </div>
+                        <div class="col-lg-4 col-6 mt-3">
+                            <div class="py-2 mx-lg-2 scrollSpy"><a href="#q6">Question 6</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid intro">
+
+            <!-- QUESTION 1 -->
+            <div class="container question px-0" id="q1">
+                <!-- header image -->
+                <img src="images/question1.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">1 - How do you call it when computers are connected without any cables
+                        between them ?</h2>
+                    <p class="indication pb-3">Select only <span class="red">1</span> answer</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q1 me-2" value="no">Cable-free
+                                        connection</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox"><label><input type="checkbox" class="q1 me-2" value="yes">Wireless
+                                        connection</label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q1 me-2" value="no">No-cable connection</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q1 me-2" value="no">Computers can't be
+                                        connected without cables</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit1">SUBMIT</button>
+                        <button class="btn hint" id="hint1" data-bs-toggle="modal" data-bs-target="#modalq1">GET A
+                            HINT</button>
+                        <p id="answer1" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 1 -->
+            <div class="modal fade" id="modalq1" tabindex="-1" aria-labelledby="modalq1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p>The cables connecting the computers are called <span class="red">wires</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 2 -->
+            <div class="container question px-0 mt-4" id="q2">
+                <!-- header image -->
+                <img src="images/question2.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">2 - What devices can connect to the internet ?</h2>
+                    <p class="indication pb-3">You can select <span class="red">multiple</span> answers</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q2 me-2" value="yes">Glasses</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox"><label><input type="checkbox" class="q2 me-2"
+                                            value="yes">Cars</label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q2 me-2" value="yes">Watches</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q2 me-2" value="no">None of these items</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit2">SUBMIT</button>
+                        <button class="btn hint" id="hint2" data-bs-toggle="modal" data-bs-target="#modalq2">GET A
+                            HINT</button>
+                        <p id="answer2" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 2 -->
+            <div class="modal fade" id="modalq2" tabindex="-1" aria-labelledby="modalq2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p>Today, <span class="red">most electronic items</span> can connect to the internet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 3 -->
+            <div class="container question px-0 mt-4" id="q3">
+                <!-- header image -->
+                <img src="images/question3.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">3 - What is code made of ?</h2>
+                    <p class="indication pb-3">You can select <span class="red">multiple</span> answers</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q3 me-2" value="yes">Numbers</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q3 me-2" value="no">Images</label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q3 me-2" value="no">Sounds</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q3 me-2" value="yes">Words</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit3">SUBMIT</button>
+                        <button class="btn hint" id="hint3" data-bs-toggle="modal" data-bs-target="#modalq3">GET A
+                            HINT</button>
+                        <p id="answer3" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 3 -->
+            <div class="modal fade" id="modalq3" tabindex="-1" aria-labelledby="modalq3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p>You are using the <span class="red">keyboard</span> of your computer to code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 4 -->
+            <div class="container question px-0 mt-4" id="q4">
+                <!-- header image -->
+                <img src="images/question4.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">4 - What should you do when you read some information online?</h2>
+                    <p class="indication pb-3">Select only <span class="red">1</span> answer</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q4 me-2" value="no">Share it with all your
+                                        friends</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q4 me-2" value="no">Not believe it</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q4 me-2" value="no">Believe it</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="q4 me-2" value="yes">Verify the source before
+                                        making your opinion</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit4">SUBMIT</button>
+                        <button class="btn hint" id="hint4" data-bs-toggle="modal" data-bs-target="#modalq4">GET A
+                            HINT</button>
+                        <p id="answer4" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 4 -->
+            <div class="modal fade" id="modalq4" tabindex="-1" aria-labelledby="modalq4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p>Anyone can write anything online. They could be <span class="red">journalist or
+                                    not</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 5 -->
+            <div class="container question px-0 mt-4" id="q5">
+                <!-- header image -->
+                <img src="images/question5.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">5 - How do you call the online safety rules ?</h2>
+                    <p class="indication pb-3">Select only <span class="red">1</span> answer</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q5 me-2" value="no">SECURITY rules</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q5 me-2" value="no">DANGER rules</label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q5 me-2" value="yes">SMART rules</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q5 me-2" value="no">There are no rules for
+                                        online safety</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit5">SUBMIT</button>
+                        <button class="btn hint" id="hint5" data-bs-toggle="modal" data-bs-target="#modalq5">GET A
+                            HINT</button>
+                        <p id="answer5" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 5 -->
+            <div class="modal fade" id="modalq5" tabindex="-1" aria-labelledby="modalq5" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p><span class="red">S</span>afe, <span class="red">M</span>eet, <span
+                                    class="red">A</span>ccepting, <span class="red">R</span>eliable, <span
+                                    class="red">T</span>ell.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 6 -->
+            <div class="container question px-0 mt-4" id="q6">
+                <!-- header image -->
+                <img src="images/question6.jpg" alt="" class="img-question">
+                <div class="p-4">
+                    <!-- question -->
+                    <h2 class="text-center pt-3">6 - What do you use to find information on the internet ?</h2>
+                    <p class="indication pb-3">Select only <span class="red">1</span> answer</p>
+                    <!-- form -->
+                    <form class="px-0 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- choice 1 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q6 me-2" value="no">A detective</label>
+                                </div>
+                                <!-- choice 2 -->
+                                <div class="checkbox"><label><input type="checkbox" class="q6 me-2" value="yes">A search
+                                        engine</label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- choice 3 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q6 me-2" value="no">A microphone</label>
+                                </div>
+                                <!-- choice 4 -->
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="q6 me-2" value="no">You can't search
+                                        information online</label>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- button -->
+                    <div class="text-center">
+                        <button class="btn goToGame" id="submit6">SUBMIT</button>
+                        <button class="btn hint" id="hint6" data-bs-toggle="modal" data-bs-target="#modalq6">GET A
+                            HINT</button>
+                        <p id="answer6" class="pt-4"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO
+                            TOP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal question 6 -->
+            <div class="modal fade" id="modalq6" tabindex="-1" aria-labelledby="modalq6" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text-end pb-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p>You will be <span class="red">searching</span> for information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end blue container -->
+        </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="container-fluid fixed-bottom">
+        <div class="container px-0 pt-3 pt-md-0" id="footer">
+            <div class="row">
+                <a href="about.html#help" class="col-md-3 text-center text-md-start pt-0 pt-md-4">CONTACT / HELP</a>
+                <p class="col-md-4 offset-md-5 text-center text-md-end px-0 pt-0 pt-md-4" id="copyright">Agathe Monnot,
+                    2021</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THE SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom JS -->
+    <script src="scripts/game1.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

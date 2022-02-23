@@ -1,0 +1,254 @@
+/* colour variables */
+/* MIXINS */
+/* IMPORTS */
+#topBar {
+  background-color: #0ec2f1;
+  height: 25px;
+}
+
+nav {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  font-size: 20px;
+  line-height: 20px;
+  /* height: 100px; */
+}
+
+nav #title {
+  color: #fd2d53;
+  font-size: 24px;
+}
+
+/* over write navbar-light settings */
+.navbar-light .navbar-nav .nav-link {
+  color: #2f2f2f;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00c349;
+}
+
+#open {
+  background-color: #00c349;
+  color: white;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #0ec2f1;
+}
+
+#footer {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  height: 75px;
+  color: white;
+  font-size: 16px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #007ec8;
+}
+
+#copyright {
+  color: white;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+body, label {
+  color: #2f2f2f;
+  font-size: 18px;
+  line-height: 2.3em;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  color: #2f2f2f;
+}
+
+main {
+  margin-bottom: 73px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, .h2, .h4 {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h2 {
+  color: #007ec8;
+}
+
+h2 {
+  color: #007ec8;
+}
+
+/* homepage */
+#homeBg {
+  background-color: #ffdc22;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro {
+  background-color: #0ec2f1;
+  color: white;
+  line-height: 1.7em;
+}
+
+.heading {
+  background-color: #00c349;
+  color: white;
+  text-align: center;
+}
+
+/* links */
+.scrollSpy {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #007ec8;
+  border-radius: 10px;
+}
+
+.scrollSpy a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.scrollSpy a:hover {
+  color: #ffdc22;
+}
+
+.goToGame {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  background-color: #007ec8;
+  color: white;
+}
+
+.goToGame:hover {
+  background-color: #ffdc22;
+  color: white;
+}
+
+.hint {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  background-color: #00c349;
+  color: white;
+}
+
+.hint:hover {
+  background-color: #ffdc22;
+  color: white;
+}
+
+.backToTop {
+  font-family: ff-providence-sans-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  background-color: #0ec2f1;
+  color: white;
+}
+
+.backToTop:hover {
+  background-color: #ffdc22;
+  color: white;
+}
+
+/* colours of text */
+.blue {
+  color: #007ec8;
+  text-align: center;
+}
+
+.red {
+  color: #fd2d53;
+  font-weight: 700;
+}
+
+.green {
+  color: #00c349;
+  font-weight: 700;
+}
+
+.thumb {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.question {
+  border-radius: 20px;
+  background-color: white;
+}
+
+.img-question {
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* draggable items box */
+.bg {
+  background-color: #a0e1f1;
+  border-radius: 15px;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
+}
+
+#result {
+  color: #2f2f2f;
+}
+
+/* game 1 */
+.indication {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  #footer {
+    height: 115px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

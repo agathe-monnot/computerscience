@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The lesson</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/nyg6oaf.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid" id="topBar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container py-3">
+            <a class="navbar-brand" id="title" href="index.html">ALL ABOUT<br>COMPUTER<br>SCIENCE!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center mt-4 mt-lg-0">
+                    <a class="nav-link mx-3" href="index.html">HOME</a>
+                    <a class="nav-link mx-3" id="open" aria-current="page" href="content.html">LESSON</a>
+                    <a class="nav-link mx-3" href="game1.html">FIRST GAME</a>
+                    <a class="nav-link mx-3" href="game2.html">SECOND GAME</a>
+                    <a class="nav-link mx-3" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- content -->
+        <!-- introduction -->
+        <div class="container-fluid intro">
+            <div class="container text-center py-5">
+                <h1>What are we going to learn ?</h1>
+                <p class="pt-2 pb-3 text-white">Click on one of the buttons to jump right in!</p>
+                <!-- buttons -->
+                <div class="row">
+                    <!-- button 1 -->
+                    <div class="col-lg-4">
+                        <div class="py-4 mx-2 scrollSpy"><a href="#internet">What is Internet?</a></div>
+                    </div>
+                    <!-- button 2 -->
+                    <div class="col-lg-4 mt-3 mt-lg-0">
+                        <div class="py-4 mx-2 scrollSpy"><a href="#safe">How to stay safe online?</a></div>
+                    </div>
+                    <!-- button 3 -->
+                    <div class="col-lg-4 mt-3 mt-lg-0">
+                        <div class="py-4 mx-2 scrollSpy"><a href="#coding">What is coding?</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 1 - what is internet -->
+        <!-- green heading -->
+        <div class="container-fluid heading" id="internet">
+            <div class="container">
+                <h1 class="pt-4">What is Internet?</h1>
+            </div>
+            <!-- image -->
+            <img src="images/internet.jpg" alt="two computers linked together">
+        </div>
+        <!-- text -->
+        <div class="container col-lg-8 offset-lg-2 py-5">
+            <p> The internet is a <span class="red">network of lots of computers connected to each other</span> so
+                people can keep in touch. You can use internet on <span class="red">computers, tablet, game consoles and
+                    phone</span> (but also on watches, glasses, cameras and cars).<br><br>
+                Some computers are connected <span class="red">with cables</span> that run all around the world,
+                underground and under the see. Some computers are connected <span class="red">without any cables</span>
+                at all and it’s called <span class="red">wireless.</span><br><br>
+                Internet is a big part of our life because we can use it to do lots of things like doing our shopping
+                from home, playing games with friends who are far away or sharing funny videos of cats.</p>
+        </div>
+        <!-- interactive images part -->
+        <div class="container pb-5 text-center">
+            <h2>What else can you do on the internet?</h2>
+            <p class="blue">Click on the images to know more</p>
+            <div class="row pt-4">
+                <div class="col-10 col-sm-12 col-lg-10 offset-1 offset-sm-0 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="images/music.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalmusic">
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-3 mt-sm-0">
+                            <img src="images/movie.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalmovie">
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-3 mt-md-0">
+                            <img src="images/game.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalgame">
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-3">
+                            <img src="images/videocall.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalcall">
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-3">
+                            <img src="images/email.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalemail">
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-3">
+                            <img src="images/search.jpg" alt="" class="thumb" data-bs-toggle="modal"
+                                data-bs-target="#modalsearch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- outro -->
+            <div class="pt-4 text-center my-4">
+                <h2>Ready to play?</h2>
+                <a class="btn goToGame" href="game1.html">GO TO GAME</a>
+            </div>
+            <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO TOP</a>
+            </div>
+
+        </div>
+
+        <!-- modal music -->
+        <div class="modal fade" id="modalmusic" tabindex="-1" aria-labelledby="modalmusic" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Listening to music</h2>
+                        <div class="row py-3">
+                            <img src="images/music.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>People can make their own music and put it on the internet for others to listen to.
+                            You can listen to many different kinds of music from <span class="red">around the
+                                world!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal movie -->
+        <div class="modal fade" id="modalmovie" tabindex="-1" aria-labelledby="modalmovie" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Watching movies and videos</h2>
+                        <div class="row py-3">
+                            <img src="images/movie.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>You can watch <span class="red">TV programmes and films</span> on the internet.<br>
+                            Remember to ask a grown-up to help you do this, and tell them if you see anything that
+                            worries or upsets you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal game -->
+        <div class="modal fade" id="modalgame" tabindex="-1" aria-labelledby="modalgame" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Playing videogames</h2>
+                        <div class="row py-3">
+                            <img src="images/game.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>You can play a game by yourself or with someone <span class="red">anywhere in the
+                                world!</span><br>
+                            You should ask an adult you trust to check it is okay to play with others on the internet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal videocall -->
+        <div class="modal fade" id="modalcall" tabindex="-1" aria-labelledby="modalcall" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Calling your friends</h2>
+                        <div class="row py-3">
+                            <img src="images/videocall.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>You can use the camera on a computer, or on a tablet, or on a smartphone to talk to
+                            someone.<br> The person you are talking to <span class="red">can see you and you can see them.</span><br> You should
+                            never talk to strangers on the internet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal email -->
+        <div class="modal fade" id="modalemail" tabindex="-1" aria-labelledby="modalemail" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Sending emails</h2>
+                        <div class="row py-3">
+                            <img src="images/email.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>You can use an <span class="red">email</span> to send a message to someone.
+                            You can add a message to a website.<br>Always ask a grown-up to help you send a message.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal search -->
+        <div class="modal fade" id="modalsearch" tabindex="-1" aria-labelledby="modalsearch" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-end pb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2 class="blue">Searching for information</h2>
+                        <div class="row py-3">
+                            <img src="images/search.jpg" alt="" class="col-8 offset-2">
+                        </div>
+                        <p>A <span class="red">search engine</span> can help you find information on the web.<br>
+                            Type some words in the search box to tell the search engine what you need to know.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 2 - how to stay safe online -->
+        <div class="container-fluid heading" id="safe">
+            <div class="container">
+                <h1 class="pt-4">How to stay safe online?</h1>
+            </div>
+            <img src="images/safe.jpg" alt="computer screen with messge on creen">
+        </div>
+
+        <!-- text -->
+        <div class="container col-lg-8 offset-lg-2 py-5">
+            <p>Remember the <span class="red">5 SMART rules</span> when using the internet:</p>
+            <div class="row">
+                <!-- S -->
+                <div class="col-3 col-md-2"><img src="images/letter-s.png" alt="letter S"></div>
+                <div class="col-9 col-md-10">
+                    <p><span class="red">Safe:</span> Keep safe by being careful not to give out personal information
+                        (such as your full name, email address, phone number, home address, photo or school name) to
+                        people you are chatting with online.</p>
+                </div>
+                <!-- M -->
+                <div class="col-3 col-md-2"><img src="images/letter-m.png" alt="letter S"></div>
+                <div class="col-9 col-md-10">
+                    <p><span class="red">Meet:</span> Meeting someone you have only been in touch with online ca be
+                        dangerous. Only do so with your parents' or carrers' permission and even then only when then
+                        only when they can be present.</p>
+                </div>
+                <!-- A -->
+                <div class="col-3 col-md-2"><img src="images/letter-a.png" alt="letter S"></div>
+                <div class="col-9 col-md-10">
+                    <p><span class="red">Accepting:</span> Accepting emails, messages or opening files, pictures or
+                        texts from people you don't know or trust can lead to problems (they may contain viruses or
+                        nasty messages!)</p>
+                </div>
+                <!-- R -->
+                <div class="col-3 col-md-2"><img src="images/letter-r.png" alt="letter S"></div>
+                <div class="col-9 col-md-10">
+                    <p><span class="red">Reliable:</span> Information you find on the internet may not be true, or
+                        someone may be lying about who they are. Make sure you check information before you believe it!
+                    </p>
+                </div>
+                <!-- T -->
+                <div class="col-3 col-md-2"><img src="images/letter-t.png" alt="letter S"></div>
+                <div class="col-9 col-md-10">
+                    <p><span class="red">Tell:</span> Tell your parents, carrer or trusted adult if someone or something
+                        makes you feel uncomfortable or worried, or if you or someone you know is bullied online.</p>
+                </div>
+            </div>
+
+
+            <!-- outro -->
+            <div class="pt-4 text-center my-4">
+                <h2>Ready to play?</h2>
+                <a class="btn goToGame" href="game2.html">GO TO GAME</a>
+            </div>
+            <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO TOP</a>
+            </div>
+        </div>
+
+
+
+        <!-- section 3 - what is coding -->
+        <div class="container-fluid heading" id="coding">
+            <div class="container">
+                <h1 class="pt-4">What is coding?</h1>
+            </div>
+            <img src="images/coding.jpg" alt="computer with a message on screen">
+        </div>
+        <!-- text -->
+        <div class="container col-lg-8 offset-lg-2 py-5">
+            <p>On a computer you can do all sort of things: play games, do your homeworks, or talk to
+                friends. All these things are done using computer programs. <span class="red">But what are programs made
+                    from?</span><br><br>
+                Computer programs are made of their <span class="red">special language called code</span>. A computer
+                can’t think for itself and you can’t talk to it like it’s a person. It needs computer program so it
+                knows what to do. <span class="red">Code is made out of words and numbers.</span> Sometimes it is even
+                made from words you already know!<br><br>
+                You can learn how to put these words in order so the computer understands what to do. You can chose the
+                words and number to chose what happens in your own program! There are lots of things you can do and it’s
+                your code so you can chose. It’s up to you, and your imagination !</p>
+            <!-- outro -->
+            <div class="pt-4 text-center my-4">
+                <h2>Ready to play?</h2>
+                <a class="btn goToGame" href="game1.html">GO TO GAME</a>
+            </div>
+            <div class="d-flex justify-content-end mt-5"><a href="#topBar" class="btn backToTop">BACK TO TOP</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid fixed-bottom">
+        <div class="container px-0 pt-3 pt-md-0" id="footer">
+            <div class="row">
+                <a href="about.html#help" class="col-md-3 text-center text-md-start pt-0 pt-md-4">CONTACT / HELP</a>
+                <p class="col-md-4 offset-md-5 text-center text-md-end px-0 pt-0 pt-md-4" id="copyright">Agathe Monnot,
+                    2021</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THE SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom JS -->
+    <script src="scripts/scripts.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
